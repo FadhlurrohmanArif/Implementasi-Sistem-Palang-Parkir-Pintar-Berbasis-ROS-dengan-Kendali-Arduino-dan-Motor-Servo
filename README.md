@@ -33,7 +33,7 @@ Tujuan utama proyek ini adalah membangun gate parkir otomatis yang dapat dikenda
 
 ---
 # 🚧 ROS2 Parking Barrier Project — Arduino + Servo + Push Button
-## ⚙️Hardware Requirements
+## 1️⃣⚙️Hardware Requirements
 | No | Komponen                     | Jumlah      |
 |----|------------------------------|-------------|
 | 1  | Arduino Uno / Mega / Nano    | 1           |

@@ -11,9 +11,9 @@
 ## 👥 Anggota Kelompok
 | Nama                       | NIM       |
 |----------------------------|-----------|
-| Aldrey Diriyah             | 122430135 |
-| Affan Alfarabi             | 122430125 |
-| Fadhlurrohman Arif         | 122430137 |
+| Aldrey Diriyah             | 122430054 |
+| Affan Alfarabi             | 122430077 |
+| Fadhlurrohman Arif         | 122430144 |
 
 ---
 ## 📘 Pendahuluan

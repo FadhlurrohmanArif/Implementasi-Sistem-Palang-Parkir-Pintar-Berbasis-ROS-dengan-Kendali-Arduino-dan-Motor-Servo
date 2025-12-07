@@ -58,7 +58,7 @@ Servo:
 
 ---
 ## 3️⃣ -- Arduino Code
-```cpp
+```
 #include <Servo.h>
 
 Servo gateServo;
@@ -94,6 +94,18 @@ void loop() {
 
   delay(10);
 }
-
+```
 ---
-## **3️⃣ -- Arduino Code**
+## 4️⃣ -- Install ROS2 + rosserial
+### 1. Install rosserial
+```
+sudo apt install ros-$ROS_DISTRO-rosserial-arduino
+sudo apt install ros-$ROS_DISTRO-rosserial-python
+```
+### 2. Generate Arduino Library
+```
+cd ~/Arduino/libraries
+rosrun rosserial_arduino make_libraries.py .
+```
+---
+## 5️⃣ -- ROS2 Node — smart_barrier Package

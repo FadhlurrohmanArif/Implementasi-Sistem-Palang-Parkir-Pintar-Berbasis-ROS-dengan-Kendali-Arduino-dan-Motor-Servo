@@ -95,3 +95,5 @@ void loop() {
   delay(10);
 }
 
+---
+## **3️⃣ -- Arduino Code**

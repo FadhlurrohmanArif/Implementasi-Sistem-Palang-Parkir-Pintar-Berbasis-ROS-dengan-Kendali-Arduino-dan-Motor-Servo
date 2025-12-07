@@ -329,6 +329,13 @@ if __name__ == '__main__':
     except rospy.ROSInterruptException:
         publisher.shutdown()
 ```
+## 🔁 Alur Publisher–Subscriber Secara Lengkap
+```
+[Arduino] --Serial--> [rosserial_python] --Publikasi--> /gate_status
+                                           |
+                                           v
+                                [ROS2 C++ Node Subscriber]
+```
 ---
 ## 🔥 11. Launch File (opsional)
 ```

@@ -46,8 +46,12 @@ Tujuan utama proyek ini adalah membangun gate parkir otomatis yang dapat dikenda
 ## 2️⃣ Wiring Diagram
 ### 🔘 Push Button
 Push Button:
-Kaki 1 → Pin D2 (Arduino)
-Kaki 2 → GND
+- Kaki 1 → Pin D2 (Arduino)
+- Kaki 2 → GND
 
 ### ⚙️ Servo
+Servo:
+- Merah  → 5V
+- Coklat → GND
+- Kuning → Pin D9
 

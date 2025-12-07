@@ -33,7 +33,7 @@ Tujuan utama proyek ini adalah membangun gate parkir otomatis yang dapat dikenda
 
 ---
 # 🚧 ROS2 Parking Barrier Project — Arduino + Servo + Push Button
-## 1️⃣⚙️Hardware Requirements
+## 1️⃣--⚙️Hardware Requirements
 | No | Komponen                     | Jumlah      |
 |----|------------------------------|-------------|
 | 1  | Arduino Uno / Mega / Nano    | 1           |
@@ -43,7 +43,8 @@ Tujuan utama proyek ini adalah membangun gate parkir otomatis yang dapat dikenda
 | 5  | Resistor 10 kΩ (pull-down)   | 1           |
 | 6  | Kabel USB                    | 1           |
 
-## 2️⃣ Wiring Diagram
+---
+## 2️⃣-- Wiring Diagram
 ### 🔘 Push Button
 Push Button:
 - Kaki 1 → Pin D2 (Arduino)
@@ -54,4 +55,43 @@ Servo:
 - Merah  → 5V
 - Coklat → GND
 - Kuning → Pin D9
+
+---
+## 3️⃣ -- Arduino Code
+```cpp
+#include <Servo.h>
+
+Servo gateServo;
+const int servoPin = 9;
+const int buttonPin = 2;
+
+int buttonState = 0;
+bool gateOpen = false;
+
+void setup() {
+  Serial.begin(115200);
+  gateServo.attach(servoPin);
+  pinMode(buttonPin, INPUT_PULLUP);
+
+  gateServo.write(0);  // posisi palang menutup
+  delay(500);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+
+  if (buttonState == LOW) {
+    gateOpen = !gateOpen;
+    if (gateOpen) {
+      gateServo.write(90);   // buka palang
+      Serial.println("GATE_OPEN");
+    } else {
+      gateServo.write(0);    // tutup palang
+      Serial.println("GATE_CLOSED");
+    }
+    delay(500); // debounce
+  }
+
+  delay(10);
+}
 

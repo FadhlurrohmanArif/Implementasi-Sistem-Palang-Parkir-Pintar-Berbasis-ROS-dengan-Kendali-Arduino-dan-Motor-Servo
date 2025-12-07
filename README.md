@@ -8,16 +8,26 @@
 </p>
 
 ---
-
-
-# Implementasi-Sistem-Palang-Parkir-Pintar-Berbasis-ROS-dengan-Kendali-Arduino-dan-Motor-Servo
-Proyek ini menerapkan sistem palang parkir pintar berbasis ROS yang terhubung dengan Arduino Uno untuk mengendalikan servo secara real-time. Sistem menunjukkan penggunaan ROS sebagai middleware dalam kontrol perangkat fisik, memungkinkan operasi manual melalui node ROS dan mendukung perluasan otomatis dengan sensor kendaraan.
-
-
----
 ## 👥 Anggota Kelompok
 | Nama                       | NIM       |
 |----------------------------|-----------|
 | Aldrey Diriyah             | 122430135 |
 | Affan Alfarabi             | 122430125 |
 | Fadhlurrohman Arif         | 122430137 |
+
+---
+
+Proyek ini merupakan implementasi sistem palang parkir pintar yang mengintegrasikan Robot Operating System (ROS) dengan Arduino Uno sebagai pengendali aktuator motor servo. Sistem ini dirancang untuk mendemonstrasikan bagaimana ROS dapat digunakan sebagai middleware untuk mengontrol perangkat fisik secara real-time melalui komunikasi serial.
+
+Tujuan utama proyek ini adalah membangun gate parkir otomatis yang dapat dikendalikan menggunakan node ROS, baik secara manual (melalui terminal atau GUI), maupun secara otomatis pada tahap pengembangan lanjutan dengan menambahkan sensor pendeteksi kendaraan.
+
+---
+
+## 🚀 Fitur Utama
+
+- Integrasi ROS dengan Arduino Uno menggunakan **rosserial**.
+- Kendali motor **servo** untuk membuka dan menutup palang parkir.
+- Arsitektur **publisher–subscriber** pada ROS untuk mengirim perintah gerak.
+- Monitoring status palang (open/close) melalui **ROS topic**.
+- Mendukung pengembangan otomatis berbasis sensor seperti **RFID, ultrasonic, kamera**, dan lainnya.
+

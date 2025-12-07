@@ -16,14 +16,14 @@
 | Fadhlurrohman Arif         | 122430144 |
 
 ---
-## 📘 Pendahuluan
+# 📘 Pendahuluan
 Proyek ini merupakan implementasi sistem palang parkir pintar yang mengintegrasikan Robot Operating System (ROS) dengan Arduino Uno sebagai pengendali aktuator motor servo. Sistem ini dirancang untuk mendemonstrasikan bagaimana ROS dapat digunakan sebagai middleware untuk mengontrol perangkat fisik secara real-time melalui komunikasi serial.
 
 Tujuan utama proyek ini adalah membangun gate parkir otomatis yang dapat dikendalikan menggunakan node ROS, baik secara manual (melalui terminal atau GUI), maupun secara otomatis pada tahap pengembangan lanjutan dengan menambahkan sensor pendeteksi kendaraan.
 
 ---
 
-## 🚀 Fitur Utama
+# 🚀 Fitur Utama
 
 - Integrasi ROS dengan Arduino Uno menggunakan **rosserial**.
 - Kendali motor **servo** untuk membuka dan menutup palang parkir.
@@ -32,4 +32,16 @@ Tujuan utama proyek ini adalah membangun gate parkir otomatis yang dapat dikenda
 - Mendukung pengembangan otomatis berbasis sensor seperti **RFID, ultrasonic, kamera**, dan lainnya.
 
 ---
-## 🚧 ROS2 Parking Barrier Project — Arduino + Servo + Push Button
+# 🚧 ROS2 Parking Barrier Project — Arduino + Servo + Push Button
+## ⚙️Hardware Requirements
+| No | Komponen                     | Jumlah      |
+|----|------------------------------|-------------|
+| 1  | Arduino Uno / Mega / Nano    | 1           |
+| 2  | Servo SG90 / MG996R          | 1           |
+| 3  | Push Button (Normally Open)  | 1           |
+| 4  | Kabel Jumper                 | Beberapa    |
+| 5  | Resistor 10 kΩ (pull-down)   | 1           |
+| 6  | Kabel USB                    | 1           |
+
+
+

@@ -48,6 +48,11 @@ Tujuan utama proyek ini adalah membangun gate parkir otomatis yang dapat dikenda
 | 5  | Resistor 10 kΩ (pull-down)   | 1           |
 | 6  | Kabel USB                    | 1           |
 
+<p align="center">
+  <img src="Block Diagram.jpeg" alt="Block Diagram" width="50%">
+</p>
+---
+
 ---
 ## 2️⃣-- Wiring Diagram
 ### 🔘 Push Button
